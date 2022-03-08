@@ -36,7 +36,15 @@ print(random.randrange(100))
 for i in range(10):
     print(random.randrange(5, 27, 4)) #inicio, termina, intervalo de brinco
 
-
 from math import factorial
 print(factorial(5))
 
+#Ejemplo de uso de random
+
+for i in range(1,16):
+    print(i,"=", random.random())
+
+
+
+for i in range(5):
+    print(random.uniform(100,200))

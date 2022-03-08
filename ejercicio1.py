@@ -21,3 +21,12 @@ print(m.sin(m.pi/2))
 #ejemplo 2 de importar con alias
 from math import pi as PI, sin as sine
 print(sine(PI/2))
+
+from math import e, exp, log #Euler, exponente, logaritmo
+print(pow(e, 1) == exp(log(e))) #e = constante aproximada del número Euler
+print(pow(2, 2) == exp(2 * log(2))) #pow encuentra el valor de (x, y) = x^y
+print(log(e, e) == exp(0))
+
+#ceil(x) → devuelve el entero más pequeño mayor o igual que x.
+#floor(x) → el entero más grande menor o igual que x.
+#trunc(x) → el valor de x truncado a un entero (ten cuidado, no es equivalente a ceil o floor).
