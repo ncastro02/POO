@@ -44,7 +44,15 @@ print(factorial(5))
 for i in range(1,16):
     print(i,"=", random.random())
 
-
-
+#Como dar formato (quitar decimales)
 for i in range(5):
     print(random.uniform(100,200))
+
+print("{:.4f}".format(random.uniform(100,200))) #el 4 indica que son 4 decimales
+print("{:.2f}".format(random.random()))
+print(round(random.random(),2))
+
+#Random choice nos da textualmente una opción
+frutas = ['peras','manzanas','plátanos']
+for i in range(3):
+    print(random.choice(frutas))
