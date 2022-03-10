@@ -85,6 +85,14 @@ print(python_implementation()) #cadena de implementación
 for atr in python_version_tuple(): #devuelve tupla e elementos (parte mayor de version, menor y numero de nivel de parche)
     print(atr)
 
+#Modulos 
+#import mod1
+#import mod2
+#import mod3
+
+#Si se importa el modulo se debe anteponer el nombre de la entidad empleando la notacion con punto
+#import my_module
+
 #PIP
 #pip help operación_o_comando â muestra una breve descripción de pip.
 #pip list â muestra una lista de los paquetes instalados actualmente.
