@@ -44,3 +44,17 @@ finally:
     print("Buen día")
     print('m&m')
 print("Resultado ->", result)
+
+a=10
+#b=5
+b=0
+try:
+    print('Operando.....')
+    result = a/b
+except ZeroDivisionError:
+    print('!No se puede divir entre cero!')
+except Exception:
+    print('Operación matematica NO aceptada')
+finally:
+    print("Buen día")
+print("Resultado ->", result)
