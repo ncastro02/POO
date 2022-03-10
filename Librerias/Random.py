@@ -1,9 +1,5 @@
-#manejo de importaciones y uso
-    #import random
-    #import os, sys
-    #from math import factorial
+#Libreria Random
 
-#uso de modulos
 import random
 print(random.randint(10,50)) 
 
@@ -29,6 +25,7 @@ print("El número de veces que salió 2 son", n2)
 numero = random.randint(1,6)
 print("El número obtenido es: ",numero)
 
+
 #randrange nos da un número aleatorio no mayor al 10 o 100
 print(random.randrange(10))
 print(random.randrange(100))
@@ -36,10 +33,22 @@ print(random.randrange(100))
 for i in range(10):
     print(random.randrange(5, 27, 4)) #inicio, termina, intervalo de brinco
 
-from math import factorial
-print(factorial(5))
 
-#Ejemplo de uso de random
+baraja=[1,2,3,4,5,7,10]
+print(bajara)
+for i in range(3):
+    random.shuffle(baraja) ##shuffle nos da de forma aleatora nuestra lista
+    print(baraja)
+
+baraja=[1,2,3,4,5,7,10]
+random.sample(baraja,5) #nos escoge (en este caso) 5 numeros aleatorios de la lista
+
+#Retorna un objeto capturando el estado interno del generador
+random.seed(0,2)
+random.setstate(random.gestate())
+random.getstate()
+
+random.triangular()
 
 for i in range(1,16):
     print(i,"=", random.random())
