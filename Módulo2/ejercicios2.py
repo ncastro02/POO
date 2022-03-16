@@ -165,8 +165,35 @@ print("www.netacad.com".replace("netacad.com", "pythoninstitute.org"))
 print("This is it!".replace("is", "are"))
 print("Apple juice".replace("juice", ""))
 
+#Cadenas 
+'10' == '010' #False
+'10' > '010' #True
+'10' > '8' #False
+'20' < '8' #True
+'20' < '80' #True
 
+# Demostración de la función sorted():
+first_greek = ['omega', 'alpha', 'pi', 'gamma']
+first_greek_2 = sorted(first_greek)
+print(first_greek)
+print(first_greek_2)
+print()
 
+# Demostración del método sort():
+second_greek = ['omega', 'alpha', 'pi', 'gamma']
+print(second_greek)
+second_greek.sort()
+print(second_greek)
 
-
-
+# Cifrado César.
+text = input("Ingresa tu mensaje: ")
+cipher = ''
+for char in text:
+    if not char.isalpha():
+        continue
+    char = char.upper()
+    code = ord(char) + 1
+    if code > ord('Z'):
+        code = ord('A')
+    cipher += chr(code)
+print(cipher)
