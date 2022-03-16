@@ -93,6 +93,22 @@ print("1" in alphabet) #False
 print("ghi" in alphabet) #True
 print("Xyz" in alphabet) #False
 
+#Resumen de métodos de cadenas
+#capitalize(): cambia todas las letras de la cadena a mayúsculas.
+#center(): centra la cadena dentro de una longitud conocida.
+#count(): cuenta las ocurrencias de un carácter dado.
+#join(): une todos los elementos de una tupla/lista en una cadena.
+#lower(): convierte todas las letras de la cadena en minúsculas.
+#lstrip(): elimina los caracteres en blanco al principio de la cadena.
+#replace(): reemplaza una subcadena dada con otra.
+#rfind(): encuentra una subcadena comenzando por el final de la cadena.
+#rstrip(): elimina los caracteres en blanco al final de la cadena.
+#split(): divide la cadena en una subcadena usando un delimitador dado.
+#strip(): elimina los espacios en blanco iniciales y finales.
+#swapcase(): intercambia las mayúsculas y minúsculas de las letras.
+#title(): hace que la primera letra de cada palabra sea mayúscula.
+#upper(): convierte todas las letras de la cadena en letras mayúsculas.
+
 # Demostración del método capitalize():
 print('aBcD'.capitalize()) #Abcd
 # Demostración del método center():
@@ -113,7 +129,41 @@ print('30'.isalnum()) #True
 print('@'.isalnum()) #False
 print('lambda_30'.isalnum()) #False
 
+# Ejemplo 1: Demostración del método isapha():
+print("Moooo".isalpha())
+print('Mu40'.isalpha())
 
+# Ejemplo 2: Demostración del método isdigit():
+print('2018'.isdigit())
+print("Year2019".isdigit())
+
+# Ejemplo 1: Demostración del método islower():
+print("Moooo".islower())
+print('moooo'.islower())
+
+# Ejemplo 2: Demostración del método isspace(:
+print(' \n '.isspace())
+print(" ".isspace())
+print("mooo mooo mooo".isspace())
+
+# Ejemplo 3: Demostración del método isupper():
+print("Moooo".isupper())
+print('moooo'.isupper())
+print('MOOOO'.isupper())
+
+# Demonstrating the join() method:
+print(",".join(["omicron", "pi", "rho"]))
+
+# Demostración del método lower():
+print("SiGmA=60".lower())
+
+# Demostración del método the lstrip():
+print("[" + " tau ".lstrip() + "]")
+
+# Demostración del método replace():
+print("www.netacad.com".replace("netacad.com", "pythoninstitute.org"))
+print("This is it!".replace("is", "are"))
+print("Apple juice".replace("juice", ""))
 
 
 
