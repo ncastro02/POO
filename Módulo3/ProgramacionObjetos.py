@@ -1,5 +1,5 @@
 #
-class Tarjeta:
+class tarjeta:
     def _init__(self, numero, cuentah, caducidad, estado, cantidad =0):
         self.numero = numero
         self.cuentahabiente = cuentah
@@ -32,9 +32,9 @@ def activar(self):
     self.estado ='Activa'
     return
 
-t=Tarjeta('110010', 'Juan Lopez', '05/23', 'Inactiva', 3)
-t1=Tarjeta('110011', 'Monica Naranjos', '05/23', 'Inactiva',0)
-t2=Tarjeta('110012', 'JPedro García', '05/23', 'Inactiva', 3000)
+t=tarjeta('110010', 'Juan Lopez', '05/23', 'Inactiva', 3)
+t1=tarjeta('110011', 'Monica Naranjos', '05/23', 'Inactiva',0)
+t2=tarjeta('110012', 'JPedro García', '05/23', 'Inactiva', 3000)
 
 print(t)
 print('**************')
