@@ -32,5 +32,22 @@ def activar(self):
     self.estado ='Activa'
     return
 
-t= Tarjeta('0123456789', 'Juan Lopez', '05/22', 'Inactiva', 1000)
+t=Tarjeta('110010', 'Juan Lopez', '05/23', 'Inactiva', 3)
+t1=Tarjeta('110011', 'Monica Naranjos', '05/23', 'Inactiva',0)
+t2=Tarjeta('110012', 'JPedro García', '05/23', 'Inactiva', 3000)
+
 print(t)
+print('**************')
+print(t1)
+print('**************')
+print(t2)
+
+t.activar()
+t1.activar()
+t2.activar()
+
+t.deposito(200)
+t1.deposito(400)
+t2.deposito(600)
+t.retirar(800)
+t.retirar(80)
