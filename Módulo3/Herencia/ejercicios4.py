@@ -182,6 +182,26 @@ tracked = Vehicle(Tracks())
 wheeled.turn(True)
 tracked.turn(False)
 
+class Top:
+    def m_top(self):
+        print("top")
+
+
+class Middle(Top):
+    def m_middle(self):
+        print("middle")
+
+
+class Bottom(Middle):
+    def m_bottom(self):
+        print("bottom")
+
+
+object = Bottom()
+object.m_bottom()
+object.m_middle()
+object.m_top()
+
 #EJERCICIOS
 class Dog:
     kennel = 0
