@@ -199,3 +199,39 @@ print("- Cedula de identidad: {0}.".format(supervisor1.cedula))
 print("- Nombre completo: {0} {1}.".format(supervisor1.nombre, supervisor1.apellido))
 print("- Genero: {0}.".format(supervisor1getGenero(supervisor1.sexo)))
 print("- {0} {1} dijo: {2}".format(supervisor1.nombre,supervisor1.apellido, supervisor1.hablar("¡A trabajar Leonardo!!!".upper)))
+
+#Destreza
+class Destreza(object):
+    """Clase la cual representa la Destreza de la Persona"""
+    
+    def __init__(self,area,herramienta,experiencia):
+        self.area = area
+        self.herramienta = herramienta
+        self.experiencia = experiencia
+
+    def __str__(self):
+        """Devuelve una cadena representativa de la Destreza"""
+        return """Destreza en el área %s con la herramienta %s, tiene %s años de experiencia.""" %(
+            str(self.area), self.experiencia, self.herramienta)
+
+class JefeCuadrilla(Supervisor, Destreza):
+    """Clase de la cual representa al Jefe de Cuadrilla"""
+
+def __init(self,cedula,nombre,apellido,sexo,rol,area,herramienta,experiencia,cuadrilla):
+    """Constructor de clase Jefe de Cuadrilla"""
+    #Invoca al constructor de clase Supervisor
+    Supervisor.__init__(self,cedula,nombre,apellido, sexo,rol)
+    #Invoca al constructor de clase Destreza
+    Destreza.__init__(self,area,herramienta,experiencia)
+    #Nuevos atributos
+    self.cuadrilla = cuadrilla
+
+def __str__(self):
+    """Devuelve cadena representativa al Jefe de Cuadrilla"""
+    jq = "{0}: {1} {2}, rol '{3}', tareas {4}, cuadrilla: {5}"
+    return jq.format(
+        self.__doc__[28:46], self.nombre,self.apellido, self.rol,self.consulta_tareas(),self.cuadrilla)
+
+
+jefecuadrilla = JefeCuadrilla ("V-16987456", "Jen","Paz","D","Administrador","Contaduria","Calculadora","buena",1)
+print(jefecuadrilla)
