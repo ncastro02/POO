@@ -39,7 +39,8 @@ print('Se ha generado el usuario exitosamente.')
 
 #Menú de opciones
 print()
-print('Menú de opciones.\n1. Cambiar nombre de usuario.\n2. Cambio de contraseña.\n3. Eliminar usuario\n4. Salir del menú de opciones.\n')
+mo = ('Menú de opciones.\n1. Cambiar nombre de usuario.\n2. Cambio de contraseña.\n3. Eliminar usuario\n4. Salir del menú de opciones.\n')
+print(mo)
 
 while True:
     try:
@@ -53,19 +54,21 @@ while True:
                 ncor = input('Ingresa un nuevo nombre de usuario: ')
                 cor = ncor
                 print(usuario,'Cambio exitoso.\n')
+                print(mo)
             #Cambio de contraseña
             elif m == 2:
                 ncon = input('Ingresa una nueva contraseña: ')
                 con = ncon
                 print(usuario,'Cambio exitoso.\n')
+                print(mo)
             #Eliminar usuario
             elif m == 3:
                 usuario = None
-                print('Se ha eliminado el usuario exitosamente.')
-                break
+                print('Se ha eliminado el usuario exitosamente.\n')
+                print(mo)
             #Salir
             else:
-                print('Usted ha salido del menú.')
+                print('Usted ha salido del menú.\n')
                 break
         else:
             print('Debe ingresar un número del menú de opciones.\n')
